@@ -1,0 +1,3 @@
+--with-dovecot=/usr/lib64/dovecot
+--with-ldap=yes
+--with-moduledir=/usr/lib64/dovecot

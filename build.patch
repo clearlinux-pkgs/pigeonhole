@@ -1,0 +1,28 @@
+From d04799a7e4b19ba0631ec7800b4768806172770c Mon Sep 17 00:00:00 2001
+From: William Douglas <william.douglas@intel.com>
+Date: Thu, 9 Apr 2020 15:52:45 -0700
+Subject: [PATCH] Get tests to use the right library path
+
+Tests are being built assuming dovecot libraries are in the library
+path, work around this by giving the correct dovecot library path via
+LD_LIBRARY_PATH.
+---
+ src/lib-sieve/util/Makefile.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/lib-sieve/util/Makefile.in b/src/lib-sieve/util/Makefile.in
+index e9c9bd2..8366ddc 100644
+--- a/src/lib-sieve/util/Makefile.in
++++ b/src/lib-sieve/util/Makefile.in
+@@ -776,7 +776,7 @@ uninstall-am: uninstall-pkginc_libHEADERS
+ check: check-am check-test
+ check-test: all-am
+ 	for bin in $(test_programs); do \
+-	  if ! $(RUN_TEST) ./$$bin; then exit 1; fi; \
++	  if ! $(RUN_TEST) env LD_LIBRARY_PATH=/usr/lib64/dovecot ./$$bin; then exit 1; fi; \
+ 	done
+ 
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.
+-- 
+2.26.0
+

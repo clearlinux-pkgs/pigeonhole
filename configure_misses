@@ -1,0 +1,5 @@
+Configure miss: whether gcc is clang 3.3+
+Configure miss: ber_free in -lldap
+Configure miss: sasl.h usability
+Configure miss: sasl.h presence
+Configure miss: sasl.h
