@@ -1,1 +1,1 @@
-regex = dovecot.\d+\.\d+.pigeonhole.(\d+\.\d+\.\d+)$
+regex = \d+\.\d+.pigeonhole.(\d+\.\d+\.\d+)$
