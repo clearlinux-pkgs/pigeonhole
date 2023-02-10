@@ -5,8 +5,8 @@
 # Source0 file verified with key 0x18A348AEED409DA1 (dovecot-ce@dovecot.org)
 #
 Name     : pigeonhole
-Version  : 2.3.pigeonhole.0.5.20
-Release  : 10
+Version  : 0.5.20
+Release  : 11
 URL      : https://pigeonhole.dovecot.org/releases/2.3/dovecot-2.3-pigeonhole-0.5.20.tar.gz
 Source0  : https://pigeonhole.dovecot.org/releases/2.3/dovecot-2.3-pigeonhole-0.5.20.tar.gz
 Source1  : https://pigeonhole.dovecot.org/releases/2.3/dovecot-2.3-pigeonhole-0.5.20.tar.gz.sig
@@ -117,7 +117,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1674865035
+export SOURCE_DATE_EPOCH=1676059779
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -139,11 +139,11 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1674865035
+export SOURCE_DATE_EPOCH=1676059779
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pigeonhole
-cp %{_builddir}/dovecot-2.3-pigeonhole-0.5.20/COPYING %{buildroot}/usr/share/package-licenses/pigeonhole/e54ccad100241cf089ed3934f148d2ac2db470fd || :
-cp %{_builddir}/dovecot-2.3-pigeonhole-0.5.20/COPYING.LGPL %{buildroot}/usr/share/package-licenses/pigeonhole/01a6b4bf79aca9b556822601186afab86e8c4fbf || :
+cp %{_builddir}/dovecot-2.3-pigeonhole-%{version}/COPYING %{buildroot}/usr/share/package-licenses/pigeonhole/e54ccad100241cf089ed3934f148d2ac2db470fd || :
+cp %{_builddir}/dovecot-2.3-pigeonhole-%{version}/COPYING.LGPL %{buildroot}/usr/share/package-licenses/pigeonhole/01a6b4bf79aca9b556822601186afab86e8c4fbf || :
 %make_install
 
 %files
