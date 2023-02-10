@@ -1,2 +1,2 @@
 alias = dovecot
-regex = ^(?:[0-9\.]+\.pigeonhole\.)?([0-9\.]+)$
+regex = ^(?:(?:dovecot.)?[0-9\.]+.pigeonhole.)?([0-9\.]+)(?:\.[a-z]+)*$
