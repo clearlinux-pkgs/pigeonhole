@@ -6,7 +6,7 @@
 #
 Name     : pigeonhole
 Version  : 0.5.20
-Release  : 11
+Release  : 12
 URL      : https://pigeonhole.dovecot.org/releases/2.3/dovecot-2.3-pigeonhole-0.5.20.tar.gz
 Source0  : https://pigeonhole.dovecot.org/releases/2.3/dovecot-2.3-pigeonhole-0.5.20.tar.gz
 Source1  : https://pigeonhole.dovecot.org/releases/2.3/dovecot-2.3-pigeonhole-0.5.20.tar.gz.sig
