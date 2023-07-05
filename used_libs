@@ -2,5 +2,5 @@ libc.so.6
 libdovecot-login.so.0
 libdovecot-storage.so.0
 libdovecot.so.0
-liblber-2.4.so.2
-libldap-2.4.so.2
+liblber.so.2
+libldap.so.2
