@@ -1,6 +1,12 @@
 Configure miss: ber_free in -lldap
+Configure miss: ber_free in -lldap
+Configure miss: sasl.h
 Configure miss: sasl.h
 Configure miss: sasl.h presence
+Configure miss: sasl.h presence
+Configure miss: sasl.h usability
 Configure miss: sasl.h usability
 Configure miss: whether gcc is clang 3.3+
+Configure miss: whether gcc is clang 3.3+
+Configure miss: whether we want undefined behaviour sanitizer
 Configure miss: whether we want undefined behaviour sanitizer
